@@ -1,0 +1,2224 @@
+/* Selecciona los elementos «:root» a los que se aplicarán estas reglas. */
+:root {
+  /* Define la variable de color o de estilo «--bg»: #0a0f12. */
+  --bg: #0a0f12;
+  /* Define la variable de color o de estilo «--panel»: #151d23. */
+  --panel: #151d23;
+  /* Define la variable de color o de estilo «--edge»: #303b42. */
+  --edge: #303b42;
+  /* Define la variable de color o de estilo «--text»: #e5ecee. */
+  --text: #e5ecee;
+  /* Define la variable de color o de estilo «--muted»: #7e959f. */
+  --muted: #7e959f;
+  /* Define la variable de color o de estilo «--cyan»: #00e5ff. */
+  --cyan: #00e5ff;
+  /* Define la variable de color o de estilo «--teal»: #0d2a2a. */
+  --teal: #0d2a2a;
+  /* Define la variable de color o de estilo «--red»: #f05d56. */
+  --red: #f05d56;
+  /* Define la variable de color o de estilo «--band»: #63d68f. */
+  --band: #63d68f;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «*» a los que se aplicarán estas reglas. */
+* {
+  /* Incluye el borde y el relleno en el tamaño calculado de cada elemento: border-box. */
+  box-sizing: border-box;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «html» a los que se aplicarán estas reglas. */
+html,
+/* Selecciona los elementos «body» a los que se aplicarán estas reglas. */
+body {
+  /* Define la separación exterior: 0. */
+  margin: 0;
+  /* Fija el ancho: 100%. */
+  width: 100%;
+  /* Fija la altura: 100%. */
+  height: 100%;
+  /* Establece el fondo, su color o su degradado: var(--bg). */
+  background: var(--bg);
+  /* Establece el color del texto: var(--text). */
+  color: var(--text);
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «12px "Segoe UI"» a los que se aplicarán estas reglas. */
+    12px "Segoe UI",
+    /* Selecciona los elementos «Arial» a los que se aplicarán estas reglas. */
+    Arial,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    sans-serif;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «button» a los que se aplicarán estas reglas. */
+button,
+/* Selecciona los elementos «input» a los que se aplicarán estas reglas. */
+input,
+/* Selecciona los elementos «select» a los que se aplicarán estas reglas. */
+select {
+  /* Define la tipografía y el tamaño de letra: inherit. */
+  font: inherit;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «button» a los que se aplicarán estas reglas. */
+button,
+/* Selecciona los elementos «select» a los que se aplicarán estas reglas. */
+select,
+/* Selecciona los elementos «input» a los que se aplicarán estas reglas. */
+input {
+  /* Define el contorno de enfoque del control: none. */
+  outline: none;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Establece la propiedad visual «button»: focus-visible,. */
+button:focus-visible,
+/* Establece la propiedad visual «input»: focus-visible,. */
+input:focus-visible,
+/* Establece la propiedad visual «select»: focus-visible,. */
+select:focus-visible,
+/* Selecciona los elementos «.knob:focus-visible» a los que se aplicarán estas reglas. */
+.knob:focus-visible {
+  /* Define el contorno de enfoque del control: 2px solid var(--cyan). */
+  outline: 2px solid var(--cyan);
+  /* Separa el contorno de enfoque del borde: 2px. */
+  outline-offset: 2px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «button» a los que se aplicarán estas reglas. */
+button {
+  /* Define el indicador del mouse sobre el control: pointer. */
+  cursor: pointer;
+  /* Establece el fondo, su color o su degradado: linear-gradient(#29373e, #1a272e). */
+  background: linear-gradient(#29373e, #1a272e);
+  /* Establece el color del texto: #c6d4db. */
+  color: #c6d4db;
+  /* Define el grosor, el estilo y el color del borde: 1px solid #3b4b53. */
+  border: 1px solid #3b4b53;
+  /* Redondea las esquinas: 4px. */
+  border-radius: 4px;
+  /* Fija la altura: 29px. */
+  height: 29px;
+  /* Define el espacio interior: 0 11px. */
+  padding: 0 11px;
+  /* Establece el tamaño de letra: 10px. */
+  font-size: 10px;
+  /* Ajusta la separación entre caracteres: 0.6px. */
+  letter-spacing: 0.6px;
+  /* Controla los espacios y saltos de línea del texto: nowrap. */
+  white-space: nowrap;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Establece la propiedad visual «button»: hover {. */
+button:hover {
+  /* Ajusta el borde específico «border-color»: #7b9ba8. */
+  border-color: #7b9ba8;
+  /* Establece el color del texto: #fff. */
+  color: #fff;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Establece la propiedad visual «button»: disabled {. */
+button:disabled {
+  /* Ajusta la transparencia: 0.38. */
+  opacity: 0.38;
+  /* Define el indicador del mouse sobre el control: default. */
+  cursor: default;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «button.active» a los que se aplicarán estas reglas. */
+button.active {
+  /* Establece el color del texto: var(--cyan). */
+  color: var(--cyan);
+  /* Ajusta el borde específico «border-color»: #07818f. */
+  border-color: #07818f;
+  /* Establece el fondo, su color o su degradado: #12323a. */
+  background: #12323a;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «button.danger» a los que se aplicarán estas reglas. */
+button.danger {
+  /* Establece el color del texto: #fff. */
+  color: #fff;
+  /* Ajusta el borde específico «border-color»: #b84744. */
+  border-color: #b84744;
+  /* Establece el fondo, su color o su degradado: linear-gradient(#b94a48, #843b3e). */
+  background: linear-gradient(#b94a48, #843b3e);
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «button.primary» a los que se aplicarán estas reglas. */
+button.primary {
+  /* Establece el color del texto: #071417. */
+  color: #071417;
+  /* Define el grosor de la letra: 700. */
+  font-weight: 700;
+  /* Establece el fondo, su color o su degradado: linear-gradient(#4bdde8, #1facbb). */
+  background: linear-gradient(#4bdde8, #1facbb);
+  /* Ajusta el borde específico «border-color»: #2cb8c7. */
+  border-color: #2cb8c7;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «button.plain» a los que se aplicarán estas reglas. */
+button.plain {
+  /* Ajusta el borde específico «border-color»: transparent. */
+  border-color: transparent;
+  /* Establece el fondo, su color o su degradado: none. */
+  background: none;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.hidden» a los que se aplicarán estas reglas. */
+.hidden {
+  /* Selecciona cómo se distribuye o se oculta el elemento: none !important. */
+  display: none !important;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «input[type="number"]» a los que se aplicarán estas reglas. */
+input[type="number"],
+/* Selecciona los elementos «select» a los que se aplicarán estas reglas. */
+select {
+  /* Establece el color del texto: #cbdde5. */
+  color: #cbdde5;
+  /* Define el grosor, el estilo y el color del borde: 1px solid #354952. */
+  border: 1px solid #354952;
+  /* Establece el fondo, su color o su degradado: #0b171d. */
+  background: #0b171d;
+  /* Redondea las esquinas: 3px. */
+  border-radius: 3px;
+  /* Define el espacio interior: 5px. */
+  padding: 5px;
+  /* Selecciona la familia tipográfica: Consolas, monospace. */
+  font-family: Consolas, monospace;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «input[type="number"]» a los que se aplicarán estas reglas. */
+input[type="number"] {
+  /* Fija el ancho: 80px. */
+  width: 80px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «input[type="checkbox"]» a los que se aplicarán estas reglas. */
+input[type="checkbox"] {
+  /* Establece el color de las casillas activadas: var(--cyan). */
+  accent-color: var(--cyan);
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.app» a los que se aplicarán estas reglas. */
+.app {
+  /* Establece el ancho mínimo: 900px. */
+  min-width: 900px;
+  /* Establece la altura mínima: 680px. */
+  min-height: 680px;
+  /* Fija la altura: 100vh. */
+  height: 100vh;
+  /* Selecciona cómo se distribuye o se oculta el elemento: grid. */
+  display: grid;
+  /* Define las alturas de las filas principales: 64px 48px minmax(265px, 1fr) 259px 29px. */
+  grid-template-rows: 64px 48px minmax(265px, 1fr) 259px 29px;
+  /* Limita el ancho máximo: 2400px. */
+  max-width: 2400px;
+  /* Define la separación exterior: auto. */
+  margin: auto;
+  /* Controla el contenido que excede el área disponible: hidden. */
+  overflow: hidden;
+  /* Establece el fondo, su color o su degradado: radial-gradient(ellipse at 10% 0, #12212b, var(--bg) 60%). */
+  background: radial-gradient(ellipse at 10% 0, #12212b, var(--bg) 60%);
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «header» a los que se aplicarán estas reglas. */
+header {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Ajusta el borde específico «border-bottom»: 1px solid #355361. */
+  border-bottom: 1px solid #355361;
+  /* Define el espacio interior: 0 20px. */
+  padding: 0 20px;
+  /* Establece el fondo, su color o su degradado: linear-gradient(180deg, #202d36, #101e26). */
+  background: linear-gradient(180deg, #202d36, #101e26);
+  /* Establece la separación entre elementos: 30px. */
+  gap: 30px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.brand» a los que se aplicarán estas reglas. */
+.brand {
+  /* Establece el tamaño de letra: 21px. */
+  font-size: 21px;
+  /* Define el grosor de la letra: 800. */
+  font-weight: 800;
+  /* Ajusta la separación entre caracteres: 1.1px. */
+  letter-spacing: 1.1px;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Establece la separación entre elementos: 10px. */
+  gap: 10px;
+  /* Controla los espacios y saltos de línea del texto: nowrap. */
+  white-space: nowrap;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.brand-icon» a los que se aplicarán estas reglas. */
+.brand-icon {
+  /* Establece el tamaño de letra: 44px. */
+  font-size: 44px;
+  /* Ajusta la separación entre líneas: 1. */
+  line-height: 1;
+  /* Establece el color del texto: #20d5e9. */
+  color: #20d5e9;
+  /* Aplica un giro o desplazamiento visual: rotate(-90deg). */
+  transform: rotate(-90deg);
+  /* Define el grosor de la letra: 300. */
+  font-weight: 300;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.brand .thin» a los que se aplicarán estas reglas. */
+.brand .thin {
+  /* Define el grosor de la letra: 300. */
+  font-weight: 300;
+  /* Establece el color del texto: #91b3c6. */
+  color: #91b3c6;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.brand small» a los que se aplicarán estas reglas. */
+.brand small {
+  /* Selecciona cómo se distribuye o se oculta el elemento: block. */
+  display: block;
+  /* Establece el color del texto: #6f8c9c. */
+  color: #6f8c9c;
+  /* Establece el tamaño de letra: 8px. */
+  font-size: 8px;
+  /* Ajusta la separación entre caracteres: 2.3px. */
+  letter-spacing: 2.3px;
+  /* Ajusta la separación exterior «margin-top»: 4px. */
+  margin-top: 4px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «nav» a los que se aplicarán estas reglas. */
+nav {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece la separación entre elementos: 5px. */
+  gap: 5px;
+  /* Ajusta la alineación de este elemento: stretch. */
+  align-self: stretch;
+  /* Alinea los elementos en el eje transversal: stretch. */
+  align-items: stretch;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «nav button.nav» a los que se aplicarán estas reglas. */
+nav button.nav {
+  /* Fija la altura: auto. */
+  height: auto;
+  /* Define el grosor, el estilo y el color del borde: 0. */
+  border: 0;
+  /* Redondea las esquinas: 0. */
+  border-radius: 0;
+  /* Establece el fondo, su color o su degradado: transparent. */
+  background: transparent;
+  /* Establece el tamaño de letra: 10px. */
+  font-size: 10px;
+  /* Ajusta la separación entre caracteres: 1px. */
+  letter-spacing: 1px;
+  /* Define el sistema usado para posicionar el elemento: relative. */
+  position: relative;
+  /* Define el espacio interior: 0 16px. */
+  padding: 0 16px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «nav button.nav.active» a los que se aplicarán estas reglas. */
+nav button.nav.active {
+  /* Establece el color del texto: #62e8f4. */
+  color: #62e8f4;
+  /* Establece el fondo, su color o su degradado: linear-gradient(transparent, #183742). */
+  background: linear-gradient(transparent, #183742);
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «nav button.nav.active:after» a los que se aplicarán estas reglas. */
+nav button.nav.active:after {
+  /* Crea el contenido visual auxiliar del selector: "". */
+  content: "";
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija la distancia desde el borde inferior: 0. */
+  bottom: 0;
+  /* Fija la distancia desde el borde izquierdo: 15px. */
+  left: 15px;
+  /* Fija la distancia desde el borde derecho: 15px. */
+  right: 15px;
+  /* Fija la altura: 2px. */
+  height: 2px;
+  /* Establece el fondo, su color o su degradado: var(--cyan). */
+  background: var(--cyan);
+  /* Añade sombras para representar relieve o separación: 0 0 10px #00e5ff88. */
+  box-shadow: 0 0 10px #00e5ff88;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.connection» a los que se aplicarán estas reglas. */
+.connection {
+  /* Ajusta la separación exterior «margin-left»: auto. */
+  margin-left: auto;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «9px Consolas» a los que se aplicarán estas reglas. */
+    9px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #8ca5b2. */
+  color: #8ca5b2;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece la separación entre elementos: 7px. */
+  gap: 7px;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Controla los espacios y saltos de línea del texto: nowrap. */
+  white-space: nowrap;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.connection i» a los que se aplicarán estas reglas. */
+.connection i,
+/* Selecciona los elementos «.live-dot» a los que se aplicarán estas reglas. */
+.live-dot {
+  /* Fija el ancho: 5px. */
+  width: 5px;
+  /* Fija la altura: 5px. */
+  height: 5px;
+  /* Redondea las esquinas: 50%. */
+  border-radius: 50%;
+  /* Establece el fondo, su color o su degradado: #5a707c. */
+  background: #5a707c;
+  /* Selecciona cómo se distribuye o se oculta el elemento: inline-block. */
+  display: inline-block;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.connection i.online» a los que se aplicarán estas reglas. */
+.connection i.online {
+  /* Establece el fondo, su color o su degradado: #67d4a2. */
+  background: #67d4a2;
+  /* Añade sombras para representar relieve o separación: 0 0 7px #67d4a255. */
+  box-shadow: 0 0 7px #67d4a255;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.live-dot.running» a los que se aplicarán estas reglas. */
+.live-dot.running {
+  /* Establece el fondo, su color o su degradado: #73e2a4. */
+  background: #73e2a4;
+  /* Añade sombras para representar relieve o separación: 0 0 6px #73e2a4. */
+  box-shadow: 0 0 6px #73e2a4;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.transport» a los que se aplicarán estas reglas. */
+.transport {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Establece la separación entre elementos: 8px. */
+  gap: 8px;
+  /* Define el espacio interior: 0 22px. */
+  padding: 0 22px;
+  /* Ajusta el borde específico «border-bottom»: 1px solid #2b3b44. */
+  border-bottom: 1px solid #2b3b44;
+  /* Establece el fondo, su color o su degradado: #111b21. */
+  background: #111b21;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.transport select» a los que se aplicarán estas reglas. */
+.transport select {
+  /* Fija el ancho: 128px. */
+  width: 128px;
+  /* Establece el tamaño de letra: 11px. */
+  font-size: 11px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.filename» a los que se aplicarán estas reglas. */
+.filename {
+  /* Ajusta la separación exterior «margin-right»: auto. */
+  margin-right: auto;
+  /* Establece el color del texto: #7695a4. */
+  color: #7695a4;
+  /* Limita el ancho máximo: 350px. */
+  max-width: 350px;
+  /* Controla el contenido que excede el área disponible: hidden. */
+  overflow: hidden;
+  /* Define cómo indicar texto que no cabe: ellipsis. */
+  text-overflow: ellipsis;
+  /* Controla los espacios y saltos de línea del texto: nowrap. */
+  white-space: nowrap;
+  /* Establece el tamaño de letra: 11px. */
+  font-size: 11px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.workspace» a los que se aplicarán estas reglas. */
+.workspace {
+  /* Selecciona cómo se distribuye o se oculta el elemento: grid. */
+  display: grid;
+  /* Define los anchos de las columnas: minmax(0, 1fr) 222px. */
+  grid-template-columns: minmax(0, 1fr) 222px;
+  /* Define la separación exterior: 12px 16px 5px. */
+  margin: 12px 16px 5px;
+  /* Establece la separación entre elementos: 9px. */
+  gap: 9px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.analyzer» a los que se aplicarán estas reglas. */
+.analyzer {
+  /* Define el grosor, el estilo y el color del borde: 1px solid #355260. */
+  border: 1px solid #355260;
+  /* Redondea las esquinas: 5px. */
+  border-radius: 5px;
+  /* Establece el fondo, su color o su degradado: linear-gradient(120deg, #101e29, #09282c 55%, #102529). */
+  background: linear-gradient(120deg, #101e29, #09282c 55%, #102529);
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece el sentido de distribución de los elementos: column. */
+  flex-direction: column;
+  /* Establece la altura mínima: 0. */
+  min-height: 0;
+  /* Añade sombras para representar relieve o separación: . */
+  box-shadow:
+    /* Selecciona los elementos «0 0 0 3px #080f14» a los que se aplicarán estas reglas. */
+    0 0 0 3px #080f14,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    inset 0 0 36px #020d1670;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.analyzer-title» a los que se aplicarán estas reglas. */
+.analyzer-title {
+  /* Define el espacio interior: 12px 13px 5px. */
+  padding: 12px 13px 5px;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Distribuye el espacio entre los elementos: space-between. */
+  justify-content: space-between;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.analyzer-title b» a los que se aplicarán estas reglas. */
+.analyzer-title b {
+  /* Establece el tamaño de letra: 10px. */
+  font-size: 10px;
+  /* Define el grosor de la letra: 600. */
+  font-weight: 600;
+  /* Establece el color del texto: #afc3cb. */
+  color: #afc3cb;
+  /* Ajusta la separación entre caracteres: 1.7px. */
+  letter-spacing: 1.7px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.analyzer-title small» a los que se aplicarán estas reglas. */
+.analyzer-title small {
+  /* Selecciona cómo se distribuye o se oculta el elemento: block. */
+  display: block;
+  /* Establece el tamaño de letra: 9px. */
+  font-size: 9px;
+  /* Establece el color del texto: #577b8b. */
+  color: #577b8b;
+  /* Ajusta la separación exterior «margin-top»: 5px. */
+  margin-top: 5px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.plot-tools» a los que se aplicarán estas reglas. */
+.plot-tools {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece la separación entre elementos: 5px. */
+  gap: 5px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.plot-tools button» a los que se aplicarán estas reglas. */
+.plot-tools button {
+  /* Fija la altura: 23px. */
+  height: 23px;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «9px Consolas» a los que se aplicarán estas reglas. */
+    9px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.plot» a los que se aplicarán estas reglas. */
+.plot {
+  /* Distribuye el espacio que ocupa el elemento flexible: 1. */
+  flex: 1;
+  /* Establece la altura mínima: 150px. */
+  min-height: 150px;
+  /* Define el sistema usado para posicionar el elemento: relative. */
+  position: relative;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.plot svg» a los que se aplicarán estas reglas. */
+.plot svg {
+  /* Selecciona cómo se distribuye o se oculta el elemento: block. */
+  display: block;
+  /* Fija el ancho: 100%. */
+  width: 100%;
+  /* Fija la altura: 100%. */
+  height: 100%;
+  /* Controla el contenido que excede el área disponible: visible. */
+  overflow: visible;
+  /* Permite o impide seleccionar el texto: none. */
+  user-select: none;
+  /* Controla los gestos táctiles que atiende el navegador: none. */
+  touch-action: none;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.grid-label» a los que se aplicarán estas reglas. */
+.grid-label {
+  /* Define el relleno del elemento SVG: #698c9d. */
+  fill: #698c9d;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «10px Consolas» a los que se aplicarán estas reglas. */
+    10px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.grid-line» a los que se aplicarán estas reglas. */
+.grid-line {
+  /* Define el color de la línea SVG: #2c5964. */
+  stroke: #2c5964;
+  /* Establece el grosor de la línea SVG: 0.6. */
+  stroke-width: 0.6;
+  /* Ajusta la transparencia: 0.48. */
+  opacity: 0.48;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.grid-zero» a los que se aplicarán estas reglas. */
+.grid-zero {
+  /* Define el color de la línea SVG: #658f99. */
+  stroke: #658f99;
+  /* Establece el grosor de la línea SVG: 0.9. */
+  stroke-width: 0.9;
+  /* Ajusta la transparencia: 0.8. */
+  opacity: 0.8;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.plot-legend» a los que se aplicarán estas reglas. */
+.plot-legend {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece la separación entre elementos: 15px. */
+  gap: 15px;
+  /* Define el espacio interior: 6px 14px 9px. */
+  padding: 6px 14px 9px;
+  /* Establece el color del texto: #809ba7. */
+  color: #809ba7;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «9px Consolas» a los que se aplicarán estas reglas. */
+    9px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Controla los espacios y saltos de línea del texto: nowrap. */
+  white-space: nowrap;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.plot-legend span» a los que se aplicarán estas reglas. */
+.plot-legend span {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Establece la separación entre elementos: 5px. */
+  gap: 5px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.key» a los que se aplicarán estas reglas. */
+.key {
+  /* Fija la altura: 2px. */
+  height: 2px;
+  /* Fija el ancho: 12px. */
+  width: 12px;
+  /* Selecciona cómo se distribuye o se oculta el elemento: inline-block. */
+  display: inline-block;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.key.gray» a los que se aplicarán estas reglas. */
+.key.gray {
+  /* Establece el fondo, su color o su degradado: #668589. */
+  background: #668589;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.key.cyan» a los que se aplicarán estas reglas. */
+.key.cyan {
+  /* Establece el fondo, su color o su degradado: #39bbcc. */
+  background: #39bbcc;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.key.yellow» a los que se aplicarán estas reglas. */
+.key.yellow {
+  /* Establece el fondo, su color o su degradado: #4de3ee. */
+  background: #4de3ee;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.plot-legend .right» a los que se aplicarán estas reglas. */
+.plot-legend .right {
+  /* Ajusta la separación exterior «margin-left»: auto. */
+  margin-left: auto;
+  /* Establece el color del texto: #658591. */
+  color: #658591;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.no-signal» a los que se aplicarán estas reglas. */
+.no-signal {
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija la distancia desde el borde superior: 28%. */
+  top: 28%;
+  /* Fija la distancia desde el borde izquierdo: 0. */
+  left: 0;
+  /* Fija la distancia desde el borde derecho: 0. */
+  right: 0;
+  /* Alinea el texto: center. */
+  text-align: center;
+  /* Define si el elemento recibe acciones del puntero: none. */
+  pointer-events: none;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «9px Consolas» a los que se aplicarán estas reglas. */
+    9px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #577881. */
+  color: #577881;
+  /* Ajusta la separación entre caracteres: 2px. */
+  letter-spacing: 2px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.node» a los que se aplicarán estas reglas. */
+.node {
+  /* Define el indicador del mouse sobre el control: grab. */
+  cursor: grab;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.node:active» a los que se aplicarán estas reglas. */
+.node:active {
+  /* Define el indicador del mouse sobre el control: grabbing. */
+  cursor: grabbing;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.node .ring» a los que se aplicarán estas reglas. */
+.node .ring {
+  /* Define el relleno del elemento SVG: #08151e. */
+  fill: #08151e;
+  /* Establece el grosor de la línea SVG: 2.3. */
+  stroke-width: 2.3;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.node.selected .ring» a los que se aplicarán estas reglas. */
+.node.selected .ring {
+  /* Establece el grosor de la línea SVG: 3. */
+  stroke-width: 3;
+  /* Aplica el efecto visual indicado: drop-shadow(0 0 5px #3dbbbb66). */
+  filter: drop-shadow(0 0 5px #3dbbbb66);
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.node text» a los que se aplicarán estas reglas. */
+.node text {
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «10px Consolas» a los que se aplicarán estas reglas. */
+    10px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Define si el elemento recibe acciones del puntero: none. */
+  pointer-events: none;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.plot-tooltip» a los que se aplicarán estas reglas. */
+.plot-tooltip {
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Define si el elemento recibe acciones del puntero: none. */
+  pointer-events: none;
+  /* Establece el fondo, su color o su degradado: #0c1722f0. */
+  background: #0c1722f0;
+  /* Define el grosor, el estilo y el color del borde: 1px solid #426672. */
+  border: 1px solid #426672;
+  /* Define el espacio interior: 7px 10px. */
+  padding: 7px 10px;
+  /* Redondea las esquinas: 4px. */
+  border-radius: 4px;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «10px Consolas» a los que se aplicarán estas reglas. */
+    10px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Selecciona cómo se distribuye o se oculta el elemento: none. */
+  display: none;
+  /* Establece el orden de superposición: 2. */
+  z-index: 2;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.inspector» a los que se aplicarán estas reglas. */
+.inspector {
+  /* Define el grosor, el estilo y el color del borde: 1px solid #31464f. */
+  border: 1px solid #31464f;
+  /* Redondea las esquinas: 5px. */
+  border-radius: 5px;
+  /* Define el espacio interior: 12px 13px. */
+  padding: 12px 13px;
+  /* Establece el fondo, su color o su degradado: linear-gradient(110deg, #1b2b35, #13242d). */
+  background: linear-gradient(110deg, #1b2b35, #13242d);
+  /* Añade sombras para representar relieve o separación: inset 0 1px 0 #63839126. */
+  box-shadow: inset 0 1px 0 #63839126;
+  /* Controla el contenido que excede el área disponible: auto. */
+  overflow: auto;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.inspector-heading» a los que se aplicarán estas reglas. */
+.inspector-heading {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece la separación entre elementos: 8px. */
+  gap: 8px;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «11px Consolas» a los que se aplicarán estas reglas. */
+    11px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Define el grosor de la letra: 700. */
+  font-weight: 700;
+  /* Ajusta la separación entre caracteres: 1px. */
+  letter-spacing: 1px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.inspector-heading i» a los que se aplicarán estas reglas. */
+.inspector-heading i {
+  /* Fija el ancho: 8px. */
+  width: 8px;
+  /* Fija la altura: 8px. */
+  height: 8px;
+  /* Redondea las esquinas: 50%. */
+  border-radius: 50%;
+  /* Establece el fondo, su color o su degradado: var(--band). */
+  background: var(--band);
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.power» a los que se aplicarán estas reglas. */
+.power {
+  /* Ajusta la separación exterior «margin-left»: auto. */
+  margin-left: auto;
+  /* Define el espacio interior: 0. */
+  padding: 0;
+  /* Fija el ancho: 26px. */
+  width: 26px;
+  /* Establece el tamaño de letra: 17px. */
+  font-size: 17px;
+  /* Establece el color del texto: #596d75. */
+  color: #596d75;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.power.on» a los que se aplicarán estas reglas. */
+.power.on {
+  /* Establece el color del texto: var(--band). */
+  color: var(--band);
+  /* Ajusta el borde específico «border-color»: #56777a. */
+  border-color: #56777a;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.type-pill» a los que se aplicarán estas reglas. */
+.type-pill {
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «8px Consolas» a los que se aplicarán estas reglas. */
+    8px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #7197a7. */
+  color: #7197a7;
+  /* Ajusta la separación entre caracteres: 1.4px. */
+  letter-spacing: 1.4px;
+  /* Selecciona cómo se distribuye o se oculta el elemento: block. */
+  display: block;
+  /* Define la separación exterior: 6px 0 6px 16px. */
+  margin: 6px 0 6px 16px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob-row» a los que se aplicarán estas reglas. */
+.knob-row {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Establece la separación entre elementos: 13px. */
+  gap: 13px;
+  /* Define la separación exterior: 10px 0. */
+  margin: 10px 0;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob» a los que se aplicarán estas reglas. */
+.knob {
+  /* Fija el ancho: 56px. */
+  width: 56px;
+  /* Fija la altura: 56px. */
+  height: 56px;
+  /* Distribuye el espacio que ocupa el elemento flexible: none. */
+  flex: none;
+  /* Redondea las esquinas: 50%. */
+  border-radius: 50%;
+  /* Define el sistema usado para posicionar el elemento: relative. */
+  position: relative;
+  /* Controla los gestos táctiles que atiende el navegador: none. */
+  touch-action: none;
+  /* Define el indicador del mouse sobre el control: ns-resize. */
+  cursor: ns-resize;
+  /* Establece el fondo, su color o su degradado: radial-gradient(circle at 45% 28%, #54788b, #345166 35%, #1c3343 67%, #10232c 70%). */
+  background: radial-gradient(circle at 45% 28%, #54788b, #345166 35%, #1c3343 67%, #10232c 70%);
+  /* Define el grosor, el estilo y el color del borde: 3px solid #0b1921. */
+  border: 3px solid #0b1921;
+  /* Añade sombras para representar relieve o separación: . */
+  box-shadow:
+    /* Selecciona los elementos «0 0 0 1px #436674» a los que se aplicarán estas reglas. */
+    0 0 0 1px #436674,
+    /* Selecciona los elementos «inset 0 2px 1px #7297a6» a los que se aplicarán estas reglas. */
+    inset 0 2px 1px #7297a6,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    0 4px 6px #050b11;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob:before» a los que se aplicarán estas reglas. */
+.knob:before {
+  /* Crea el contenido visual auxiliar del selector: "". */
+  content: "";
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija las distancias respecto de los bordes del contenedor: -5px. */
+  inset: -5px;
+  /* Define el grosor, el estilo y el color del borde: 2px solid var(--band). */
+  border: 2px solid var(--band);
+  /* Ajusta el borde específico «border-bottom-color»: transparent. */
+  border-bottom-color: transparent;
+  /* Redondea las esquinas: 50%. */
+  border-radius: 50%;
+  /* Ajusta la transparencia: 0.8. */
+  opacity: 0.8;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob .needle» a los que se aplicarán estas reglas. */
+.knob .needle {
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija las distancias respecto de los bordes del contenedor: 0. */
+  inset: 0;
+  /* Aplica un giro o desplazamiento visual: rotate(0deg). */
+  transform: rotate(0deg);
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob .needle:after» a los que se aplicarán estas reglas. */
+.knob .needle:after {
+  /* Crea el contenido visual auxiliar del selector: "". */
+  content: "";
+  /* Fija el ancho: 3px. */
+  width: 3px;
+  /* Fija la altura: 11px. */
+  height: 11px;
+  /* Establece el fondo, su color o su degradado: #77eafa. */
+  background: #77eafa;
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija la distancia desde el borde superior: 4px. */
+  top: 4px;
+  /* Fija la distancia desde el borde izquierdo: 23px. */
+  left: 23px;
+  /* Redondea las esquinas: 2px. */
+  border-radius: 2px;
+  /* Añade sombras para representar relieve o separación: 0 0 4px #00e5ff77. */
+  box-shadow: 0 0 4px #00e5ff77;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob[aria-disabled="true"]» a los que se aplicarán estas reglas. */
+.knob[aria-disabled="true"] {
+  /* Ajusta la transparencia: 0.35. */
+  opacity: 0.35;
+  /* Define el indicador del mouse sobre el control: default. */
+  cursor: default;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob-value label» a los que se aplicarán estas reglas. */
+.knob-value label {
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «8px Consolas» a los que se aplicarán estas reglas. */
+    8px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #7095a5. */
+  color: #7095a5;
+  /* Ajusta la separación entre caracteres: 1.2px. */
+  letter-spacing: 1.2px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob-value > div» a los que se aplicarán estas reglas. */
+.knob-value > div {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Ajusta el borde específico «border-bottom»: 1px solid #406272. */
+  border-bottom: 1px solid #406272;
+  /* Define el espacio interior: 3px 0. */
+  padding: 3px 0;
+  /* Ajusta la separación exterior «margin-top»: 2px. */
+  margin-top: 2px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob-value input» a los que se aplicarán estas reglas. */
+.knob-value input {
+  /* Fija el ancho: 82px. */
+  width: 82px;
+  /* Define el grosor, el estilo y el color del borde: 0. */
+  border: 0;
+  /* Establece el fondo, su color o su degradado: transparent. */
+  background: transparent;
+  /* Establece el color del texto: #cbf1fc. */
+  color: #cbf1fc;
+  /* Establece el tamaño de letra: 15px. */
+  font-size: 15px;
+  /* Define el espacio interior: 0. */
+  padding: 0;
+  /* Redondea las esquinas: 0. */
+  border-radius: 0;
+  /* Controla la apariencia nativa del navegador: textfield. */
+  appearance: textfield;
+  /* Controla la apariencia específica de Firefox: textfield. */
+  -moz-appearance: textfield;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob-value input::-webkit-inner-spin-button» a los que se aplicarán estas reglas. */
+.knob-value input::-webkit-inner-spin-button {
+  /* Controla la apariencia nativa del navegador: none. */
+  appearance: none;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob-value span» a los que se aplicarán estas reglas. */
+.knob-value span {
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «9px Consolas» a los que se aplicarán estas reglas. */
+    9px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #628596. */
+  color: #628596;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.hp» a los que se aplicarán estas reglas. */
+.hp {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Distribuye el espacio entre los elementos: space-between. */
+  justify-content: space-between;
+  /* Ajusta el espacio interior «padding-top»: 10px. */
+  padding-top: 10px;
+  /* Ajusta el borde específico «border-top»: 1px solid #344b56. */
+  border-top: 1px solid #344b56;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «9px Consolas» a los que se aplicarán estas reglas. */
+    9px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #a7c0ce. */
+  color: #a7c0ce;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.hp input[type="number"]» a los que se aplicarán estas reglas. */
+.hp input[type="number"] {
+  /* Fija el ancho: 45px. */
+  width: 45px;
+  /* Define el espacio interior: 3px. */
+  padding: 3px;
+  /* Establece el color del texto: var(--cyan). */
+  color: var(--cyan);
+  /* Establece el tamaño de letra: 10px. */
+  font-size: 10px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.inspector-bottom» a los que se aplicarán estas reglas. */
+.inspector-bottom {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Distribuye el espacio entre los elementos: space-between. */
+  justify-content: space-between;
+  /* Establece el color del texto: #567987. */
+  color: #567987;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «8px Consolas» a los que se aplicarán estas reglas. */
+    8px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Ajusta la separación exterior «margin-top»: 8px. */
+  margin-top: 8px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.channel-section» a los que se aplicarán estas reglas. */
+.channel-section {
+  /* Define el espacio interior: 2px 16px 8px. */
+  padding: 2px 16px 8px;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece el sentido de distribución de los elementos: column. */
+  flex-direction: column;
+  /* Establece la altura mínima: 0. */
+  min-height: 0;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.channel-heading» a los que se aplicarán estas reglas. */
+.channel-heading {
+  /* Fija la altura: 36px. */
+  height: 36px;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Distribuye el espacio entre los elementos: space-between. */
+  justify-content: space-between;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «9px Consolas» a los que se aplicarán estas reglas. */
+    9px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #aec4cf. */
+  color: #aec4cf;
+  /* Ajusta la separación entre caracteres: 0.7px. */
+  letter-spacing: 0.7px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.channel-heading b» a los que se aplicarán estas reglas. */
+.channel-heading b {
+  /* Establece el tamaño de letra: 8px. */
+  font-size: 8px;
+  /* Establece el color del texto: #587785. */
+  color: #587785;
+  /* Define el grosor de la letra: 400. */
+  font-weight: 400;
+  /* Ajusta la separación exterior «margin-left»: 18px. */
+  margin-left: 18px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.channel-heading > div» a los que se aplicarán estas reglas. */
+.channel-heading > div {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece la separación entre elementos: 7px. */
+  gap: 7px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.channel-heading button» a los que se aplicarán estas reglas. */
+.channel-heading button,
+/* Selecciona los elementos «.channel-heading select» a los que se aplicarán estas reglas. */
+.channel-heading select {
+  /* Fija la altura: 24px. */
+  height: 24px;
+  /* Establece el tamaño de letra: 9px. */
+  font-size: 9px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strips» a los que se aplicarán estas reglas. */
+.strips {
+  /* Selecciona cómo se distribuye o se oculta el elemento: grid. */
+  display: grid;
+  /* Define los anchos de las columnas: repeat(9, minmax(0, 1fr)). */
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  /* Establece la separación entre elementos: 5px. */
+  gap: 5px;
+  /* Distribuye el espacio que ocupa el elemento flexible: 1. */
+  flex: 1;
+  /* Establece la altura mínima: 0. */
+  min-height: 0;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip» a los que se aplicarán estas reglas. */
+.strip {
+  /* Define el grosor, el estilo y el color del borde: 1px solid #334651. */
+  border: 1px solid #334651;
+  /* Redondea las esquinas: 4px. */
+  border-radius: 4px;
+  /* Define el sistema usado para posicionar el elemento: relative. */
+  position: relative;
+  /* Establece el fondo, su color o su degradado: linear-gradient(90deg, #111c24, #1e2d38 48%, #16232e). */
+  background: linear-gradient(90deg, #111c24, #1e2d38 48%, #16232e);
+  /* Define el espacio interior: 6px 8px. */
+  padding: 6px 8px;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece el sentido de distribución de los elementos: column. */
+  flex-direction: column;
+  /* Establece la altura mínima: 0. */
+  min-height: 0;
+  /* Añade sombras para representar relieve o separación: inset 0 1px #71849411. */
+  box-shadow: inset 0 1px #71849411;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip.selected» a los que se aplicarán estas reglas. */
+.strip.selected {
+  /* Ajusta el borde específico «border-color»: var(--band). */
+  border-color: var(--band);
+  /* Establece el fondo, su color o su degradado: linear-gradient(90deg, #17303b, #233841, #192c35). */
+  background: linear-gradient(90deg, #17303b, #233841, #192c35);
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-title» a los que se aplicarán estas reglas. */
+.strip-title {
+  /* Define el grosor, el estilo y el color del borde: 0. */
+  border: 0;
+  /* Ajusta el borde específico «border-bottom»: 2px solid var(--band). */
+  border-bottom: 2px solid var(--band);
+  /* Establece el fondo, su color o su degradado: linear-gradient(#263b49, #182a35). */
+  background: linear-gradient(#263b49, #182a35);
+  /* Establece el color del texto: #c8e3ed. */
+  color: #c8e3ed;
+  /* Fija la altura: 25px. */
+  height: 25px;
+  /* Establece el tamaño de letra: 9px. */
+  font-size: 9px;
+  /* Ajusta la separación entre caracteres: 1px. */
+  letter-spacing: 1px;
+  /* Alinea el texto: left. */
+  text-align: left;
+  /* Define el espacio interior: 0 6px. */
+  padding: 0 6px;
+  /* Redondea las esquinas: 2px. */
+  border-radius: 2px;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Establece la separación entre elementos: 5px. */
+  gap: 5px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-title i» a los que se aplicarán estas reglas. */
+.strip-title i {
+  /* Fija el ancho: 5px. */
+  width: 5px;
+  /* Fija la altura: 5px. */
+  height: 5px;
+  /* Redondea las esquinas: 50%. */
+  border-radius: 50%;
+  /* Establece el fondo, su color o su degradado: var(--band). */
+  background: var(--band);
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-sub» a los que se aplicarán estas reglas. */
+.strip-sub {
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «8px Consolas» a los que se aplicarán estas reglas. */
+    8px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #7197a7. */
+  color: #7197a7;
+  /* Define la separación exterior: 5px 0. */
+  margin: 5px 0;
+  /* Alinea el texto: center. */
+  text-align: center;
+  /* Ajusta la separación entre caracteres: 0.5px. */
+  letter-spacing: 0.5px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-body» a los que se aplicarán estas reglas. */
+.strip-body {
+  /* Define el sistema usado para posicionar el elemento: relative. */
+  position: relative;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Distribuye el espacio entre los elementos: center. */
+  justify-content: center;
+  /* Distribuye el espacio que ocupa el elemento flexible: 1. */
+  flex: 1;
+  /* Establece la altura mínima: 50px. */
+  min-height: 50px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.fader-rail» a los que se aplicarán estas reglas. */
+.fader-rail {
+  /* Fija la altura: 100%. */
+  height: 100%;
+  /* Define el sistema usado para posicionar el elemento: relative. */
+  position: relative;
+  /* Fija el ancho: 70px. */
+  width: 70px;
+  /* Controla los gestos táctiles que atiende el navegador: none. */
+  touch-action: none;
+  /* Define el indicador del mouse sobre el control: ns-resize. */
+  cursor: ns-resize;
+  /* Permite o impide seleccionar el texto: none. */
+  user-select: none;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.fader-rail:before» a los que se aplicarán estas reglas. */
+.fader-rail:before {
+  /* Crea el contenido visual auxiliar del selector: "". */
+  content: "";
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija la distancia desde el borde izquierdo: 32px. */
+  left: 32px;
+  /* Fija la distancia desde el borde superior: 5px. */
+  top: 5px;
+  /* Fija la distancia desde el borde inferior: 5px. */
+  bottom: 5px;
+  /* Fija el ancho: 5px. */
+  width: 5px;
+  /* Establece el fondo, su color o su degradado: #05090f. */
+  background: #05090f;
+  /* Define el grosor, el estilo y el color del borde: 1px solid #3c4c55. */
+  border: 1px solid #3c4c55;
+  /* Redondea las esquinas: 3px. */
+  border-radius: 3px;
+  /* Añade sombras para representar relieve o separación: inset 0 0 3px #000. */
+  box-shadow: inset 0 0 3px #000;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.fader-tick» a los que se aplicarán estas reglas. */
+.fader-tick {
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija el ancho: 10px. */
+  width: 10px;
+  /* Fija la altura: 1px. */
+  height: 1px;
+  /* Establece el fondo, su color o su degradado: #48606c. */
+  background: #48606c;
+  /* Fija la distancia desde el borde izquierdo: 18px. */
+  left: 18px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.fader-tick span» a los que se aplicarán estas reglas. */
+.fader-tick span {
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija la distancia desde el borde derecho: 13px. */
+  right: 13px;
+  /* Fija la distancia desde el borde superior: -4px. */
+  top: -4px;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «7px Consolas» a los que se aplicarán estas reglas. */
+    7px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #577481. */
+  color: #577481;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.fader-thumb» a los que se aplicarán estas reglas. */
+.fader-thumb {
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija la distancia desde el borde izquierdo: 20px. */
+  left: 20px;
+  /* Fija el ancho: 30px. */
+  width: 30px;
+  /* Fija la altura: 36px. */
+  height: 36px;
+  /* Aplica un giro o desplazamiento visual: translateY(-50%). */
+  transform: translateY(-50%);
+  /* Redondea las esquinas: 3px. */
+  border-radius: 3px;
+  /* Define el grosor, el estilo y el color del borde: 1px solid #8a989e. */
+  border: 1px solid #8a989e;
+  /* Añade sombras para representar relieve o separación: . */
+  box-shadow:
+    /* Selecciona los elementos «0 3px 6px #000b» a los que se aplicarán estas reglas. */
+    0 3px 6px #000b,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    inset 0 0 2px white;
+  /* Establece el fondo, su color o su degradado: linear-gradient(. */
+  background: linear-gradient(
+    /* Selecciona los elementos «#c3d3d9» a los que se aplicarán estas reglas. */
+    #c3d3d9,
+    /* Selecciona los elementos «#f6fcff 6%» a los que se aplicarán estas reglas. */
+    #f6fcff 6%,
+    /* Selecciona los elementos «#9eaeb4 16%» a los que se aplicarán estas reglas. */
+    #9eaeb4 16%,
+    /* Selecciona los elementos «#4a5961 38%» a los que se aplicarán estas reglas. */
+    #4a5961 38%,
+    /* Selecciona los elementos «#81949e 47%» a los que se aplicarán estas reglas. */
+    #81949e 47%,
+    /* Selecciona los elementos «#19242d 49%» a los que se aplicarán estas reglas. */
+    #19242d 49%,
+    /* Selecciona los elementos «#16212a 53%» a los que se aplicarán estas reglas. */
+    #16212a 53%,
+    /* Selecciona los elementos «#c8d5dd 55%» a los que se aplicarán estas reglas. */
+    #c8d5dd 55%,
+    /* Selecciona los elementos «#ebf2f5 72%» a los que se aplicarán estas reglas. */
+    #ebf2f5 72%,
+    /* Selecciona los elementos «#819098 90%» a los que se aplicarán estas reglas. */
+    #819098 90%,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    #cedae0
+  /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+  );
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.fader-thumb:after» a los que se aplicarán estas reglas. */
+.fader-thumb:after {
+  /* Crea el contenido visual auxiliar del selector: "". */
+  content: "";
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija las distancias respecto de los bordes del contenedor: 5px 3px. */
+  inset: 5px 3px;
+  /* Establece el fondo, su color o su degradado: repeating-linear-gradient(. */
+  background: repeating-linear-gradient(
+    /* Selecciona los elementos «0deg» a los que se aplicarán estas reglas. */
+    0deg,
+    /* Selecciona los elementos «transparent 0» a los que se aplicarán estas reglas. */
+    transparent 0,
+    /* Selecciona los elementos «transparent 3px» a los que se aplicarán estas reglas. */
+    transparent 3px,
+    /* Selecciona los elementos «#2439444d 3px» a los que se aplicarán estas reglas. */
+    #2439444d 3px,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    #2439444d 4px
+  /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+  );
+  /* Define si el elemento recibe acciones del puntero: none. */
+  pointer-events: none;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-meter» a los que se aplicarán estas reglas. */
+.strip-meter {
+  /* Fija el ancho: 5px. */
+  width: 5px;
+  /* Ajusta la separación exterior «margin-left»: 0. */
+  margin-left: 0;
+  /* Ajusta la separación exterior «margin-top»: 5px. */
+  margin-top: 5px;
+  /* Ajusta la separación exterior «margin-bottom»: 5px. */
+  margin-bottom: 5px;
+  /* Redondea las esquinas: 1px. */
+  border-radius: 1px;
+  /* Establece el fondo, su color o su degradado: #070d12. */
+  background: #070d12;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece el sentido de distribución de los elementos: column-reverse. */
+  flex-direction: column-reverse;
+  /* Establece la separación entre elementos: 2px. */
+  gap: 2px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-meter i» a los que se aplicarán estas reglas. */
+.strip-meter i {
+  /* Distribuye el espacio que ocupa el elemento flexible: 1. */
+  flex: 1;
+  /* Establece la altura mínima: 2px. */
+  min-height: 2px;
+  /* Establece el fondo, su color o su degradado: #182b2a. */
+  background: #182b2a;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-db» a los que se aplicarán estas reglas. */
+.strip-db {
+  /* Alinea el texto: center. */
+  text-align: center;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «11px Consolas» a los que se aplicarán estas reglas. */
+    11px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #c5dce5. */
+  color: #c5dce5;
+  /* Define la separación exterior: 4px 0. */
+  margin: 4px 0;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-enable» a los que se aplicarán estas reglas. */
+.strip-enable {
+  /* Fija la altura: 20px. */
+  height: 20px;
+  /* Establece el fondo, su color o su degradado: #13232d. */
+  background: #13232d;
+  /* Ajusta el borde específico «border-color»: #3b545e. */
+  border-color: #3b545e;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «8px Consolas» a los que se aplicarán estas reglas. */
+    8px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #628390. */
+  color: #628390;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-enable.on» a los que se aplicarán estas reglas. */
+.strip-enable.on {
+  /* Establece el color del texto: var(--band). */
+  color: var(--band);
+  /* Ajusta el borde específico «border-color»: #53736e. */
+  border-color: #53736e;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-enable.muted» a los que se aplicarán estas reglas. */
+.strip-enable.muted {
+  /* Establece el fondo, su color o su degradado: #9c4745. */
+  background: #9c4745;
+  /* Establece el color del texto: white. */
+  color: white;
+  /* Ajusta el borde específico «border-color»: #cf6f62. */
+  border-color: #cf6f62;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip[data-id="main"]» a los que se aplicarán estas reglas. */
+.strip[data-id="main"] {
+  /* Ajusta el borde específico «border-color»: #4f8791. */
+  border-color: #4f8791;
+  /* Define la variable de color o de estilo «--band»: #00e5ff. */
+  --band: #00e5ff;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.clip-led» a los que se aplicarán estas reglas. */
+.clip-led {
+  /* Fija el ancho: 4px. */
+  width: 4px;
+  /* Fija la altura: 4px. */
+  height: 4px;
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija la distancia desde el borde derecho: 8px. */
+  right: 8px;
+  /* Fija la distancia desde el borde superior: 37px. */
+  top: 37px;
+  /* Establece el fondo, su color o su degradado: #332d30. */
+  background: #332d30;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.clip-led.on» a los que se aplicarán estas reglas. */
+.clip-led.on {
+  /* Establece el fondo, su color o su degradado: #ff554e. */
+  background: #ff554e;
+  /* Añade sombras para representar relieve o separación: 0 0 5px #ff554e. */
+  box-shadow: 0 0 5px #ff554e;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.strip-off» a los que se aplicarán estas reglas. */
+.strip-off {
+  /* Ajusta la transparencia: 0.53. */
+  opacity: 0.53;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «footer» a los que se aplicarán estas reglas. */
+footer {
+  /* Ajusta el borde específico «border-top»: 1px solid #2b3b44. */
+  border-top: 1px solid #2b3b44;
+  /* Establece el fondo, su color o su degradado: #10191f. */
+  background: #10191f;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Distribuye el espacio entre los elementos: space-between. */
+  justify-content: space-between;
+  /* Define el espacio interior: 0 18px. */
+  padding: 0 18px;
+  /* Establece el color del texto: #829eab. */
+  color: #829eab;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «9px Consolas» a los que se aplicarán estas reglas. */
+    9px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece la separación entre elementos: 15px. */
+  gap: 15px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «#status» a los que se aplicarán estas reglas. */
+#status {
+  /* Controla el contenido que excede el área disponible: hidden. */
+  overflow: hidden;
+  /* Define cómo indicar texto que no cabe: ellipsis. */
+  text-overflow: ellipsis;
+  /* Controla los espacios y saltos de línea del texto: nowrap. */
+  white-space: nowrap;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «#metrics» a los que se aplicarán estas reglas. */
+#metrics {
+  /* Controla los espacios y saltos de línea del texto: nowrap. */
+  white-space: nowrap;
+  /* Establece el color del texto: #557786. */
+  color: #557786;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.shade» a los que se aplicarán estas reglas. */
+.shade {
+  /* Define el sistema usado para posicionar el elemento: fixed. */
+  position: fixed;
+  /* Fija las distancias respecto de los bordes del contenedor: 64px 0 0. */
+  inset: 64px 0 0;
+  /* Establece el fondo, su color o su degradado: #02080c77. */
+  background: #02080c77;
+  /* Establece el orden de superposición: 10. */
+  z-index: 10;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.drawer» a los que se aplicarán estas reglas. */
+.drawer {
+  /* Define el sistema usado para posicionar el elemento: fixed. */
+  position: fixed;
+  /* Fija la distancia desde el borde derecho: 12px. */
+  right: 12px;
+  /* Fija la distancia desde el borde superior: 73px. */
+  top: 73px;
+  /* Fija la distancia desde el borde inferior: 39px. */
+  bottom: 39px;
+  /* Fija el ancho: 365px. */
+  width: 365px;
+  /* Define el grosor, el estilo y el color del borde: 1px solid #4e7685. */
+  border: 1px solid #4e7685;
+  /* Redondea las esquinas: 7px. */
+  border-radius: 7px;
+  /* Establece el fondo, su color o su degradado: linear-gradient(120deg, #1d303d, #101e29). */
+  background: linear-gradient(120deg, #1d303d, #101e29);
+  /* Añade sombras para representar relieve o separación: 0 10px 50px #000b. */
+  box-shadow: 0 10px 50px #000b;
+  /* Establece el orden de superposición: 11. */
+  z-index: 11;
+  /* Controla el contenido que excede el área disponible: auto. */
+  overflow: auto;
+  /* Define el espacio interior: 17px. */
+  padding: 17px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.drawer-title» a los que se aplicarán estas reglas. */
+.drawer-title {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Distribuye el espacio entre los elementos: space-between. */
+  justify-content: space-between;
+  /* Ajusta el borde específico «border-bottom»: 1px solid #395563. */
+  border-bottom: 1px solid #395563;
+  /* Ajusta la separación exterior «margin-bottom»: 15px. */
+  margin-bottom: 15px;
+  /* Ajusta el espacio interior «padding-bottom»: 12px. */
+  padding-bottom: 12px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.drawer-title h2» a los que se aplicarán estas reglas. */
+.drawer-title h2 {
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «14px Consolas» a los que se aplicarán estas reglas. */
+    14px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #a9e6ef. */
+  color: #a9e6ef;
+  /* Ajusta la separación entre caracteres: 1px. */
+  letter-spacing: 1px;
+  /* Define la separación exterior: 0. */
+  margin: 0;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.drawer-title button» a los que se aplicarán estas reglas. */
+.drawer-title button {
+  /* Establece el tamaño de letra: 20px. */
+  font-size: 20px;
+  /* Define el espacio interior: 0 8px. */
+  padding: 0 8px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.field» a los que se aplicarán estas reglas. */
+.field {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Distribuye el espacio entre los elementos: space-between. */
+  justify-content: space-between;
+  /* Define la separación exterior: 10px 0. */
+  margin: 10px 0;
+  /* Establece la separación entre elementos: 10px. */
+  gap: 10px;
+  /* Establece el color del texto: #a5becb. */
+  color: #a5becb;
+  /* Establece el tamaño de letra: 11px. */
+  font-size: 11px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.field select» a los que se aplicarán estas reglas. */
+.field select {
+  /* Limita el ancho máximo: 185px. */
+  max-width: 185px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.field input[type="number"]» a los que se aplicarán estas reglas. */
+.field input[type="number"] {
+  /* Fija el ancho: 95px. */
+  width: 95px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.drawer h3» a los que se aplicarán estas reglas. */
+.drawer h3 {
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «11px Consolas» a los que se aplicarán estas reglas. */
+    11px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Establece el color del texto: #6fcede. */
+  color: #6fcede;
+  /* Define la separación exterior: 19px 0 9px. */
+  margin: 19px 0 9px;
+  /* Ajusta el borde específico «border-top»: 1px solid #36505e. */
+  border-top: 1px solid #36505e;
+  /* Ajusta el espacio interior «padding-top»: 14px. */
+  padding-top: 14px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.drawer p» a los que se aplicarán estas reglas. */
+.drawer p {
+  /* Ajusta la separación entre líneas: 1.65. */
+  line-height: 1.65;
+  /* Establece el color del texto: #809fac. */
+  color: #809fac;
+  /* Establece el tamaño de letra: 11px. */
+  font-size: 11px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.drawer .row-buttons» a los que se aplicarán estas reglas. */
+.drawer .row-buttons {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece la separación entre elementos: 6px. */
+  gap: 6px;
+  /* Permite distribuir los elementos en más de una línea: wrap. */
+  flex-wrap: wrap;
+  /* Define la separación exterior: 12px 0. */
+  margin: 12px 0;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.drawer .table» a los que se aplicarán estas reglas. */
+.drawer .table {
+  /* Selecciona cómo se distribuye o se oculta el elemento: grid. */
+  display: grid;
+  /* Define los anchos de las columnas: 24px 1fr 62px 62px. */
+  grid-template-columns: 24px 1fr 62px 62px;
+  /* Establece la separación entre elementos: 7px. */
+  gap: 7px;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «10px Consolas» a los que se aplicarán estas reglas. */
+    10px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.drawer .table input» a los que se aplicarán estas reglas. */
+.drawer .table input {
+  /* Fija el ancho: 100%. */
+  width: 100%;
+  /* Establece el ancho mínimo: 0. */
+  min-width: 0;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.candidate» a los que se aplicarán estas reglas. */
+.candidate {
+  /* Selecciona cómo se distribuye o se oculta el elemento: inline-block. */
+  display: inline-block;
+  /* Define el espacio interior: 8px. */
+  padding: 8px;
+  /* Establece el fondo, su color o su degradado: #213d4a. */
+  background: #213d4a;
+  /* Establece el color del texto: #bbf3ed. */
+  color: #bbf3ed;
+  /* Ajusta la separación exterior «margin-right»: 4px. */
+  margin-right: 4px;
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «12px Consolas» a los que se aplicarán estas reglas. */
+    12px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.divider» a los que se aplicarán estas reglas. */
+.divider {
+  /* Ajusta el borde específico «border-top»: 1px solid #3b535e. */
+  border-top: 1px solid #3b535e;
+  /* Define la separación exterior: 15px 0. */
+  margin: 15px 0;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.notice» a los que se aplicarán estas reglas. */
+.notice {
+  /* Establece el fondo, su color o su degradado: #102d39. */
+  background: #102d39;
+  /* Ajusta el borde específico «border-left»: 2px solid #36afc2. */
+  border-left: 2px solid #36afc2;
+  /* Define el espacio interior: 10px. */
+  padding: 10px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.mono» a los que se aplicarán estas reglas. */
+.mono {
+  /* Selecciona la familia tipográfica: Consolas, monospace. */
+  font-family: Consolas, monospace;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.error» a los que se aplicarán estas reglas. */
+.error {
+  /* Establece el color del texto: #ff9c8e !important. */
+  color: #ff9c8e !important;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Aplica estos ajustes cuando la ventana cumple las dimensiones indicadas. */
+@media (max-width: 1199px) {
+  /* Selecciona los elementos «header» a los que se aplicarán estas reglas. */
+  header {
+    /* Establece la separación entre elementos: 16px. */
+    gap: 16px;
+    /* Define el espacio interior: 0 15px. */
+    padding: 0 15px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.brand» a los que se aplicarán estas reglas. */
+  .brand {
+    /* Establece el tamaño de letra: 17px. */
+    font-size: 17px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.brand-icon» a los que se aplicarán estas reglas. */
+  .brand-icon {
+    /* Establece el tamaño de letra: 36px. */
+    font-size: 36px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «nav button.nav» a los que se aplicarán estas reglas. */
+  nav button.nav {
+    /* Define el espacio interior: 0 10px. */
+    padding: 0 10px;
+    /* Establece el tamaño de letra: 9px. */
+    font-size: 9px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.connection» a los que se aplicarán estas reglas. */
+  .connection {
+    /* Establece el tamaño de letra: 8px. */
+    font-size: 8px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.workspace» a los que se aplicarán estas reglas. */
+  .workspace {
+    /* Define los anchos de las columnas: minmax(0, 1fr) 202px. */
+    grid-template-columns: minmax(0, 1fr) 202px;
+    /* Define la separación exterior: 9px 12px 4px. */
+    margin: 9px 12px 4px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.inspector» a los que se aplicarán estas reglas. */
+  .inspector {
+    /* Define el espacio interior: 10px. */
+    padding: 10px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.knob-row» a los que se aplicarán estas reglas. */
+  .knob-row {
+    /* Establece la separación entre elementos: 10px. */
+    gap: 10px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.filename» a los que se aplicarán estas reglas. */
+  .filename {
+    /* Limita el ancho máximo: 180px. */
+    max-width: 180px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.channel-section» a los que se aplicarán estas reglas. */
+  .channel-section {
+    /* Ajusta el espacio interior «padding-left»: 12px. */
+    padding-left: 12px;
+    /* Ajusta el espacio interior «padding-right»: 12px. */
+    padding-right: 12px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.strip» a los que se aplicarán estas reglas. */
+  .strip {
+    /* Define el espacio interior: 5px. */
+    padding: 5px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.channel-heading b» a los que se aplicarán estas reglas. */
+  .channel-heading b {
+    /* Selecciona cómo se distribuye o se oculta el elemento: none. */
+    display: none;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.plot-legend» a los que se aplicarán estas reglas. */
+  .plot-legend {
+    /* Establece la separación entre elementos: 9px. */
+    gap: 9px;
+    /* Establece el tamaño de letra: 8px. */
+    font-size: 8px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.app» a los que se aplicarán estas reglas. */
+  .app {
+    /* Define las alturas de las filas principales: 60px 45px minmax(265px, 1fr) 244px 27px. */
+    grid-template-rows: 60px 45px minmax(265px, 1fr) 244px 27px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Aplica estos ajustes cuando la ventana cumple las dimensiones indicadas. */
+@media (max-height: 750px) {
+  /* Selecciona los elementos «.knob» a los que se aplicarán estas reglas. */
+  .knob {
+    /* Fija el ancho: 46px. */
+    width: 46px;
+    /* Fija la altura: 46px. */
+    height: 46px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.knob .needle:after» a los que se aplicarán estas reglas. */
+  .knob .needle:after {
+    /* Fija la distancia desde el borde izquierdo: 18px. */
+    left: 18px;
+    /* Fija la distancia desde el borde superior: 3px. */
+    top: 3px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.knob-row» a los que se aplicarán estas reglas. */
+  .knob-row {
+    /* Define la separación exterior: 9px 0. */
+    margin: 9px 0;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.type-pill» a los que se aplicarán estas reglas. */
+  .type-pill {
+    /* Define la separación exterior: 4px 0. */
+    margin: 4px 0;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.inspector» a los que se aplicarán estas reglas. */
+  .inspector {
+    /* Ajusta el espacio interior «padding-top»: 8px. */
+    padding-top: 8px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.knob-value input» a los que se aplicarán estas reglas. */
+  .knob-value input {
+    /* Establece el tamaño de letra: 13px. */
+    font-size: 13px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.app» a los que se aplicarán estas reglas. */
+  .app {
+    /* Define las alturas de las filas principales: 56px 43px minmax(255px, 1fr) 230px 26px. */
+    grid-template-rows: 56px 43px minmax(255px, 1fr) 230px 26px;
+    /* Establece la altura mínima: 640px. */
+    min-height: 640px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.hp» a los que se aplicarán estas reglas. */
+  .hp {
+    /* Ajusta el espacio interior «padding-top»: 6px. */
+    padding-top: 6px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.analyzer-title» a los que se aplicarán estas reglas. */
+  .analyzer-title {
+    /* Ajusta el espacio interior «padding-top»: 8px. */
+    padding-top: 8px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.channel-heading» a los que se aplicarán estas reglas. */
+  .channel-heading {
+    /* Fija la altura: 31px. */
+    height: 31px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+/* Termina el grupo de reglas de estilo anterior. */
+}
+
+/* Apartado adicional: conserva los controles y el espacio de trabajo EQ. */
+/* Selecciona los elementos «.stage-view» a los que se aplicarán estas reglas. */
+.stage-view {
+  /* Define la separación exterior: 12px 16px 5px. */
+  margin: 12px 16px 5px;
+  /* Establece la altura mínima: 0. */
+  min-height: 0;
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece el sentido de distribución de los elementos: column. */
+  flex-direction: column;
+  /* Establece la separación entre elementos: 7px. */
+  gap: 7px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-heading» a los que se aplicarán estas reglas. */
+.stage-heading {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Distribuye el espacio entre los elementos: space-between. */
+  justify-content: space-between;
+  /* Alinea los elementos en el eje transversal: center. */
+  align-items: center;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-heading b» a los que se aplicarán estas reglas. */
+.stage-heading b {
+  /* Establece el tamaño de letra: 10px. */
+  font-size: 10px;
+  /* Ajusta la separación entre caracteres: 1px. */
+  letter-spacing: 1px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-heading small» a los que se aplicarán estas reglas. */
+.stage-heading small {
+  /* Selecciona cómo se distribuye o se oculta el elemento: block. */
+  display: block;
+  /* Establece el color del texto: #829ca8. */
+  color: #829ca8;
+  /* Establece el tamaño de letra: 10px. */
+  font-size: 10px;
+  /* Ajusta la separación exterior «margin-top»: 4px. */
+  margin-top: 4px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-heading button» a los que se aplicarán estas reglas. */
+.stage-heading button {
+  /* Fija la altura: 24px. */
+  height: 24px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-panels» a los que se aplicarán estas reglas. */
+.stage-panels {
+  /* Selecciona cómo se distribuye o se oculta el elemento: grid. */
+  display: grid;
+  /* Define los anchos de las columnas: 1fr 1fr. */
+  grid-template-columns: 1fr 1fr;
+  /* Establece la separación entre elementos: 10px. */
+  gap: 10px;
+  /* Establece la altura mínima: 0. */
+  min-height: 0;
+  /* Distribuye el espacio que ocupa el elemento flexible: 1. */
+  flex: 1;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-chart» a los que se aplicarán estas reglas. */
+.stage-chart {
+  /* Establece el ancho mínimo: 0. */
+  min-width: 0;
+  /* Establece la altura mínima: 0. */
+  min-height: 0;
+  /* Define el grosor, el estilo y el color del borde: 1px solid #355260. */
+  border: 1px solid #355260;
+  /* Redondea las esquinas: 5px. */
+  border-radius: 5px;
+  /* Establece el fondo, su color o su degradado: linear-gradient(120deg, #101e29, #09282c). */
+  background: linear-gradient(120deg, #101e29, #09282c);
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece el sentido de distribución de los elementos: column. */
+  flex-direction: column;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-chart-title» a los que se aplicarán estas reglas. */
+.stage-chart-title {
+  /* Define el espacio interior: 10px 12px 0. */
+  padding: 10px 12px 0;
+  /* Establece el tamaño de letra: 10px. */
+  font-size: 10px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-chart-title b» a los que se aplicarán estas reglas. */
+.stage-chart-title b {
+  /* Establece el color del texto: #aec6d0. */
+  color: #aec6d0;
+  /* Establece el tamaño de letra: 10px. */
+  font-size: 10px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-chart-title div» a los que se aplicarán estas reglas. */
+.stage-chart-title div {
+  /* Selecciona cómo se distribuye o se oculta el elemento: flex. */
+  display: flex;
+  /* Establece la separación entre elementos: 14px. */
+  gap: 14px;
+  /* Ajusta la separación exterior «margin-top»: 7px. */
+  margin-top: 7px;
+  /* Establece el tamaño de letra: 9px. */
+  font-size: 9px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-chart svg» a los que se aplicarán estas reglas. */
+.stage-chart svg {
+  /* Fija el ancho: 100%. */
+  width: 100%;
+  /* Distribuye el espacio que ocupa el elemento flexible: 1. */
+  flex: 1;
+  /* Establece la altura mínima: 0. */
+  min-height: 0;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-before» a los que se aplicarán estas reglas. */
+.stage-before {
+  /* Establece el color del texto: #8ca7b2. */
+  color: #8ca7b2;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-notch» a los que se aplicarán estas reglas. */
+.stage-notch {
+  /* Establece el color del texto: #efa76d. */
+  color: #efa76d;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-eq» a los que se aplicarán estas reglas. */
+.stage-eq {
+  /* Establece el color del texto: #4de3ee. */
+  color: #4de3ee;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-note» a los que se aplicarán estas reglas. */
+.stage-note {
+  /* Establece el tamaño de letra: 9px. */
+  font-size: 9px;
+  /* Establece el color del texto: #829ca8. */
+  color: #829ca8;
+  /* Define la separación exterior: 0. */
+  margin: 0;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-grid-label» a los que se aplicarán estas reglas. */
+.stage-grid-label {
+  /* Define la tipografía y el tamaño de letra: . */
+  font:
+    /* Selecciona los elementos «11px Consolas» a los que se aplicarán estas reglas. */
+    11px Consolas,
+    /* Continúa los valores del degradado, la sombra o la distribución definidos en esta regla. */
+    monospace;
+  /* Define el relleno del elemento SVG: #88a5af. */
+  fill: #88a5af;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-grid-line» a los que se aplicarán estas reglas. */
+.stage-grid-line {
+  /* Define el color de la línea SVG: #2c5964. */
+  stroke: #2c5964;
+  /* Establece el grosor de la línea SVG: 0.7. */
+  stroke-width: 0.7;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.stage-view path» a los que se aplicarán estas reglas. */
+.stage-view path {
+  /* Establece la propiedad visual «vector-effect»: non-scaling-stroke. */
+  vector-effect: non-scaling-stroke;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Aplica estos ajustes cuando la ventana cumple las dimensiones indicadas. */
+@media (max-width: 1100px) {
+  /* Selecciona los elementos «header» a los que se aplicarán estas reglas. */
+  header {
+    /* Establece la separación entre elementos: 12px. */
+    gap: 12px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «nav button.nav» a los que se aplicarán estas reglas. */
+  nav button.nav {
+    /* Define el espacio interior: 0 9px. */
+    padding: 0 9px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+  /* Selecciona los elementos «.connection» a los que se aplicarán estas reglas. */
+  .connection {
+    /* Establece el tamaño de letra: 8px. */
+    font-size: 8px;
+  /* Termina el grupo de reglas de estilo anterior. */
+  }
+/* Termina el grupo de reglas de estilo anterior. */
+}
+
+/* V4.1: la aguja rota alrededor del centro real, incluso en vista compacta. */
+/* Selecciona los elementos «.knob .needle» a los que se aplicarán estas reglas. */
+.knob .needle {
+  /* Selecciona cómo se distribuye o se oculta el elemento: block. */
+  display: block;
+  /* Define el sistema usado para posicionar el elemento: absolute. */
+  position: absolute;
+  /* Fija la distancia desde el borde izquierdo: 0. */
+  left: 0;
+  /* Fija la distancia desde el borde superior: 0. */
+  top: 0;
+  /* Fija la distancia desde el borde derecho: auto. */
+  right: auto;
+  /* Fija la distancia desde el borde inferior: auto. */
+  bottom: auto;
+  /* Fija el ancho: 100%. */
+  width: 100%;
+  /* Fija la altura: 100%. */
+  height: 100%;
+  /* Fija el centro alrededor del que gira el indicador: 50% 50%. */
+  transform-origin: 50% 50%;
+  /* Define si el elemento recibe acciones del puntero: none. */
+  pointer-events: none;
+  /* Redondea las esquinas: 50%. */
+  border-radius: 50%;
+  /* Controla el contenido que excede el área disponible: hidden. */
+  overflow: hidden;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob .needle:after» a los que se aplicarán estas reglas. */
+.knob .needle:after {
+  /* Fija la distancia desde el borde izquierdo: 50%. */
+  left: 50%;
+  /* Fija la distancia desde el borde superior: 9%. */
+  top: 9%;
+  /* Fija el ancho: 3px. */
+  width: 3px;
+  /* Fija la altura: 22%. */
+  height: 22%;
+  /* Aplica un giro o desplazamiento visual: translateX(-50%). */
+  transform: translateX(-50%);
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.filter-shape» a los que se aplicarán estas reglas. */
+.filter-shape {
+  /* Fija el ancho: 100%. */
+  width: 100%;
+  /* Fija la altura: 24px. */
+  height: 24px;
+  /* Establece el tamaño de letra: 10px. */
+  font-size: 10px;
+  /* Ajusta la separación exterior «margin-top»: 2px. */
+  margin-top: 2px;
+/* Termina el grupo de reglas de estilo anterior. */
+}
+/* Selecciona los elementos «.knob-value #width-unit» a los que se aplicarán estas reglas. */
+.knob-value #width-unit {
+  /* Fija el ancho: 43px. */
+  width: 43px;
+  /* Establece el tamaño de letra: 10px. */
+  font-size: 10px;
+  /* Define el espacio interior: 2px. */
+  padding: 2px;
+  /* Define el grosor, el estilo y el color del borde: 0. */
+  border: 0;
+  /* Establece el fondo, su color o su degradado: #10232c. */
+  background: #10232c;
+  /* Establece el color del texto: #91bbc9. */
+  color: #91bbc9;
+/* Termina el grupo de reglas de estilo anterior. */
+}

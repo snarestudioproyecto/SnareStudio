@@ -1,0 +1,188 @@
+<!-- Declara que la página utiliza HTML moderno. -->
+<!doctype html>
+<!-- Declara el idioma y el documento de la interfaz. -->
+<html lang="es">
+  <!-- Agrupa los datos de configuración de la página. -->
+  <head ><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- Define el título de la página. -->
+    <title>Snare Studio · Resonancia & EQ</title ><link rel="stylesheet" href="estilos.css" /></head>
+  <!-- Contiene los elementos visibles de la interfaz. -->
+  <body>
+    <!-- Agrupa el contenido principal de la aplicación. -->
+    <main class="app">
+      <!-- Organiza la cabecera y la navegación. -->
+      <header>
+        <!-- Agrupa elementos para organizarlos visualmente. -->
+        <div class="brand" ><span class="brand-icon">≋</span ><div >SNARE<span class="thin"> STUDIO</span><small>RESONANCIA / ECUALIZACIÓN</small></div ></div >
+        <!-- Agrupa los botones para cambiar de sección. -->
+        <nav aria-label="Secciones">
+          <!-- Define un botón de interacción. -->
+          <button class="nav active" data-panel="eq">EQ</button ><button class="nav" data-panel="notch">NOTCH</button>
+          <!-- Define un botón de interacción. -->
+          <button class="nav" data-panel="dynamics">DINÁMICA</button ><button class="nav" data-panel="audio">AUDIO I/O</button>
+          <!-- Define un botón de interacción. -->
+          <button class="nav" data-panel="stages">SEÑALES</button ><button class="nav" data-panel="presets">AJUSTES</button>
+        <!-- Cierra el contenedor «nav». -->
+        </nav>
+        <!-- Agrupa elementos para organizarlos visualmente; el identificador «connection-dot» permite que JavaScript lo actualice. -->
+        <div class="connection" ><i id="connection-dot"></i><span id="connection">CONECTANDO A MATLAB</span></div >
+      <!-- Cierra el contenedor «header». -->
+      </header>
+      <!-- Agrupa una sección funcional de la interfaz. -->
+      <section class="transport">
+        <!-- Presenta una etiqueta o indicador dentro de una línea; el identificador «live-dot» permite que JavaScript lo actualice. -->
+        <span class="live-dot" id="live-dot"></span>
+        <!-- Define una lista de selección; el identificador «source» permite que JavaScript lo actualice. -->
+        <select id="source" aria-label="Fuente de audio" ><option>Demo</option ><option>WAV</option ><option>Tiempo real</option></select >
+        <!-- Define un botón de interacción; el identificador «load» permite que JavaScript lo actualice. -->
+        <button id="load" class="plain" title="Seleccionar WAV">↥ Cargar WAV</button ><span class="filename" id="filename">Redoblante · demo de prueba</span>
+        <!-- Define un botón de interacción; el identificador «start» permite que JavaScript lo actualice. -->
+        <button id="start" class="primary">▶ Iniciar</button ><button id="stop" title="Detener">■</button>
+        <!-- Define un botón de interacción; el identificador «bypass» permite que JavaScript lo actualice. -->
+        <button id="bypass" aria-pressed="false">BYPASS</button ><button id="mute" class="danger" aria-pressed="true">MUTE</button>
+      <!-- Cierra el contenedor «section». -->
+      </section>
+      <!-- Agrupa una sección funcional de la interfaz. -->
+      <section class="workspace">
+        <!-- Agrupa elementos para organizarlos visualmente. -->
+        <div class="analyzer">
+          <!-- Agrupa elementos para organizarlos visualmente; el identificador «plot-title» permite que JavaScript lo actualice. -->
+          <div class="analyzer-title" ><span ><b id="plot-title">ECUALIZADOR PARAMÉTRICO</b ><small>Arrastra las bandas · Rueda del mouse para Q</small></span >
+            <!-- Agrupa elementos para organizarlos visualmente; el identificador «rta» permite que JavaScript lo actualice. -->
+            <div class="plot-tools" ><button id="rta" class="active">RTA</button><button id="range">±15 dB</button></div >
+          <!-- Cierra el contenedor «div». -->
+          </div>
+          <!-- Agrupa elementos para organizarlos visualmente; el identificador «plot» permite que JavaScript lo actualice. -->
+          <div class="plot" id="plot" ><svg id="graph" viewBox="0 0 1000 360" preserveAspectRatio="none" aria-label="Respuesta en frecuencia y espectro" >
+              <!-- Agrupa recursos gráficos reutilizables. -->
+              <defs>
+                <!-- Define un degradado usado para rellenar el espectro; el identificador «spectrumGrad» permite que JavaScript lo actualice. -->
+                <linearGradient id="spectrumGrad" x1="0" x2="0" y1="0" y2="1">
+                  <!-- Define un punto de color del degradado. -->
+                  <stop offset="0" stop-color="#00bcd4" stop-opacity=".44" />
+                  <!-- Define un punto de color del degradado. -->
+                  <stop offset="1" stop-color="#00bcd4" stop-opacity=".025" />
+                <!-- Cierra el contenedor «linearGradient». -->
+                </linearGradient>
+                <!-- Delimita el área donde pueden dibujarse las curvas; el identificador «plotClip» permite que JavaScript lo actualice. -->
+                <clipPath id="plotClip"><rect x="48" y="15" width="904" height="306" /></clipPath>
+              <!-- Cierra el contenedor «defs». -->
+              </defs>
+              <!-- Agrupa elementos de una gráfica; el identificador «grid» permite que JavaScript lo actualice. -->
+              <g id="grid"></g>
+              <!-- Agrupa elementos de una gráfica. -->
+              <g clip-path="url(#plotClip)">
+                <!-- Reserva el trazado de una curva o de un icono; el identificador «spectrum-fill» permite que JavaScript lo actualice. -->
+                <path id="spectrum-fill" fill="url(#spectrumGrad)" />
+                <!-- Reserva el trazado de una curva o de un icono; el identificador «in-spectrum» permite que JavaScript lo actualice. -->
+                <path id="in-spectrum" fill="none" stroke="#668589" stroke-width="1" />
+                <!-- Reserva el trazado de una curva o de un icono; el identificador «out-spectrum» permite que JavaScript lo actualice. -->
+                <path id="out-spectrum" fill="none" stroke="#39bbcc" stroke-width="1.2" />
+                <!-- Agrupa elementos de una gráfica; el identificador «band-fills» permite que JavaScript lo actualice. -->
+                <g id="band-fills"></g>
+                <!-- Reserva el trazado de una curva o de un icono; el identificador «curve» permite que JavaScript lo actualice. -->
+                <path id="curve" fill="none" stroke="#4de3ee" stroke-width="2.5" vector-effect="non-scaling-stroke" />
+              <!-- Cierra el contenedor «g». -->
+              </g>
+              <!-- Agrupa elementos de una gráfica; el identificador «nodes» permite que JavaScript lo actualice. -->
+              <g id="nodes"></g></svg ><div class="no-signal" id="no-signal">INICIA UNA TOMA PARA VER EL ESPECTRO</div ><div id="plot-tooltip" class="plot-tooltip"></div ></div>
+          <!-- Agrupa elementos para organizarlos visualmente. -->
+          <div class="plot-legend" ><span><i class="key gray"></i>Entrada</span><span><i class="key cyan"></i>Salida</span ><span><i class="key yellow"></i>Respuesta de filtros</span ><span class="right">EQ: dB izquierda · RTA: dBFS derecha</span></div >
+        <!-- Cierra el contenedor «div». -->
+        </div>
+        <!-- Agrupa el inspector o un panel lateral. -->
+        <aside class="inspector">
+          <!-- Agrupa elementos para organizarlos visualmente; el identificador «band-dot» permite que JavaScript lo actualice. -->
+          <div class="inspector-heading" ><i id="band-dot"></i><span id="band-name">MEDIOS</span ><button id="band-power" class="power on" title="Activar o desactivar banda" aria-label="Activar o desactivar banda" ><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" >
+                <!-- Reserva el trazado de una curva o de un icono. -->
+                <path d="M10 2v8M5 5a7 7 0 1 0 10 0" /></svg></button ></div>
+          <!-- Presenta una etiqueta o indicador dentro de una línea; el identificador «band-type» permite que JavaScript lo actualice. -->
+          <span class="type-pill" id="band-type">PEAKING / BELL</span ><select id="filter-shape" class="filter-shape hidden" aria-label="Forma del filtro" ><option value="0">Notch · muesca</option ><option value="1">Campana · curva</option></select >
+          <!-- Agrupa elementos para organizarlos visualmente; el identificador «knob-gain» permite que JavaScript lo actualice. -->
+          <div class="knob-row" ><div class="knob" id="knob-gain" role="slider" tabindex="0" aria-label="Ganancia" data-key="gain" ><span class="needle"></span></div ><div class="knob-value" ><label id="gain-label" for="band-gain">GANANCIA</label ><div ><input type="number" id="band-gain" min="-18" max="18" step="0.1" /><span >dB</span ></div ></div ></div >
+          <!-- Agrupa elementos para organizarlos visualmente; el identificador «knob-freq» permite que JavaScript lo actualice. -->
+          <div class="knob-row" ><div class="knob" id="knob-freq" role="slider" tabindex="0" aria-label="Frecuencia" data-key="freq" ><span class="needle"></span></div ><div class="knob-value" ><label for="band-freq">FRECUENCIA</label ><div ><input type="number" id="band-freq" min="30" max="18000" step="1" /><span >Hz</span ></div ></div ></div >
+          <!-- Agrupa elementos para organizarlos visualmente; el identificador «knob-q» permite que JavaScript lo actualice. -->
+          <div class="knob-row" ><div class="knob" id="knob-q" role="slider" tabindex="0" aria-label="Q" data-key="q" ><span class="needle"></span></div ><div class="knob-value" ><label id="q-label" for="band-q">ANCHO / Q</label ><div ><input type="number" id="band-q" min="0.2" max="12" step="0.1" /><select id="width-unit" aria-label="Unidad del ancho" ><option value="q">Q</option ><option value="hz">Hz</option></select ></div ></div ></div >
+          <!-- Agrupa elementos para organizarlos visualmente; el identificador «hp» permite que JavaScript lo actualice. -->
+          <div class="hp" ><label><input type="checkbox" id="hp" checked /> LOW CUT</label ><div><input type="number" id="hpHz" value="60" min="20" max="300" /> Hz</div></div >
+          <!-- Agrupa elementos para organizarlos visualmente; el identificador «band-hint» permite que JavaScript lo actualice. -->
+          <div class="inspector-bottom" ><span>12 dB/oct</span><span id="band-hint">Selecciona un nodo</span></div >
+        <!-- Cierra el contenedor «aside». -->
+        </aside>
+      <!-- Cierra el contenedor «section». -->
+      </section>
+      <!-- Agrupa una sección funcional de la interfaz; el identificador «stage-view» permite que JavaScript lo actualice. -->
+      <section id="stage-view" class="stage-view hidden" aria-label="Comparacion de etapas reales">
+        <!-- Agrupa elementos para organizarlos visualmente; el identificador «stage-state» permite que JavaScript lo actualice. -->
+        <div class="stage-heading" ><span ><b>SEÑALES / NOTCH Y EQ</b ><small id="stage-state">Inicia una toma para comparar las etapas.</small></span ><div ><button id="stage-frequency" class="active">Frecuencia</button ><button id="stage-time">Tiempo</button></div ></div >
+        <!-- Agrupa elementos para organizarlos visualmente. -->
+        <div class="stage-panels">
+          <!-- Agrupa elementos para organizarlos visualmente; el identificador «stage-notch» permite que JavaScript lo actualice. -->
+          <div class="stage-chart" ><div class="stage-chart-title" ><b>1 · EFECTO DE LOS NOTCH</b ><div ><span class="stage-before">Antes del notch</span ><span class="stage-notch">Después del notch · sin EQ</span></div ></div ><svg id="stage-notch" viewBox="0 0 1000 220" preserveAspectRatio="none" role="img" aria-label="1 · EFECTO DE LOS NOTCH" >
+              <!-- Agrupa recursos gráficos reutilizables. -->
+              <defs>
+                <!-- Delimita el área donde pueden dibujarse las curvas; el identificador «stage-clip-notch» permite que JavaScript lo actualice. -->
+                <clipPath id="stage-clip-notch">
+                  <!-- Define el rectángulo de recorte. -->
+                  <rect x="52" y="14" width="926" height="177" />
+                <!-- Cierra el contenedor «clipPath». -->
+                </clipPath>
+              <!-- Cierra el contenedor «defs». -->
+              </defs>
+              <!-- Agrupa elementos de una gráfica; el identificador «stage-grid-notch» permite que JavaScript lo actualice. -->
+              <g id="stage-grid-notch"></g>
+              <!-- Agrupa elementos de una gráfica. -->
+              <g clip-path="url(#stage-clip-notch)">
+                <!-- Reserva el trazado de una curva o de un icono; el identificador «stage-notch-a» permite que JavaScript lo actualice. -->
+                <path id="stage-notch-a" fill="none" stroke="#8ca7b2" stroke-width="1.4" />
+                <!-- Reserva el trazado de una curva o de un icono; el identificador «stage-notch-b» permite que JavaScript lo actualice. -->
+                <path id="stage-notch-b" fill="none" stroke="#efa76d" stroke-width="1.6" />
+              <!-- Cierra el contenedor «g». -->
+              </g></svg ></div>
+          <!-- Agrupa elementos para organizarlos visualmente; el identificador «stage-eq» permite que JavaScript lo actualice. -->
+          <div class="stage-chart" ><div class="stage-chart-title" ><b>2 · EFECTO DE LA ECUALIZACIÓN</b ><div ><span class="stage-notch">Después del notch</span ><span class="stage-eq">Después del EQ</span></div ></div ><svg id="stage-eq" viewBox="0 0 1000 220" preserveAspectRatio="none" role="img" aria-label="2 · EFECTO DE LA ECUALIZACIÓN" >
+              <!-- Agrupa recursos gráficos reutilizables. -->
+              <defs>
+                <!-- Delimita el área donde pueden dibujarse las curvas; el identificador «stage-clip-eq» permite que JavaScript lo actualice. -->
+                <clipPath id="stage-clip-eq">
+                  <!-- Define el rectángulo de recorte. -->
+                  <rect x="52" y="14" width="926" height="177" />
+                <!-- Cierra el contenedor «clipPath». -->
+                </clipPath>
+              <!-- Cierra el contenedor «defs». -->
+              </defs>
+              <!-- Agrupa elementos de una gráfica; el identificador «stage-grid-eq» permite que JavaScript lo actualice. -->
+              <g id="stage-grid-eq"></g>
+              <!-- Agrupa elementos de una gráfica. -->
+              <g clip-path="url(#stage-clip-eq)">
+                <!-- Reserva el trazado de una curva o de un icono; el identificador «stage-eq-a» permite que JavaScript lo actualice. -->
+                <path id="stage-eq-a" fill="none" stroke="#efa76d" stroke-width="1.4" />
+                <!-- Reserva el trazado de una curva o de un icono; el identificador «stage-eq-b» permite que JavaScript lo actualice. -->
+                <path id="stage-eq-b" fill="none" stroke="#4de3ee" stroke-width="1.6" />
+              <!-- Cierra el contenedor «g». -->
+              </g></svg ></div> </div ><p class="stage-note" >Mediciones internas: TRIM → LOW CUT → antes del notch → después del notch → después del
+          <!-- Presenta el texto visible de esta zona de la interfaz. -->
+          EQ. No incluyen dinámica, MAIN ni MUTE.</p >
+      <!-- Cierra el contenedor «section». -->
+      </section>
+      <!-- Agrupa una sección funcional de la interfaz. -->
+      <section class="channel-section">
+        <!-- Agrupa elementos para organizarlos visualmente; el identificador «detect» permite que JavaScript lo actualice. -->
+        <div class="channel-heading" ><span>CADENA DE PROCESAMIENTO <b>IN → NOTCH → EQ → DYN → OUT</b></span ><div ><button id="detect">⌁ Detectar resonancias</button ><select id="passes" aria-label="Pasadas del banco notch" ><option value="1">1 pasada</option ><option value="2">2 pasadas</option ><option value="3">3 pasadas</option></select ></div ></div >
+        <!-- Agrupa elementos para organizarlos visualmente; el identificador «strips» permite que JavaScript lo actualice. -->
+        <div class="strips" id="strips"></div>
+      <!-- Cierra el contenedor «section». -->
+      </section>
+      <!-- Agrupa el estado y las mediciones al pie de la ventana; el identificador «status» permite que JavaScript lo actualice. -->
+      <footer ><span id="status">Preparando la interfaz…</span ><span id="metrics">48 kHz · 256 muestras</span></footer >
+    <!-- Cierra el contenedor «main». -->
+    </main>
+    <!-- Agrupa elementos para organizarlos visualmente; el identificador «shade» permite que JavaScript lo actualice. -->
+    <div id="shade" class="shade hidden"></div>
+    <!-- Agrupa el inspector o un panel lateral; el identificador «drawer» permite que JavaScript lo actualice. -->
+    <aside id="drawer" class="drawer hidden" ><div class="drawer-title" ><h2 id="drawer-title"></h2><button id="close-drawer" aria-label="Cerrar">×</button></div ><div id="drawer-content"></div ></aside> 
+<!-- Carga interfaz.js, que reúne el estado, los controles, la comunicación y el inicio visual. -->
+<script src="interfaz.js"></script>
+<!-- Cierra el cuerpo visible de la página. -->
+</body></html>
